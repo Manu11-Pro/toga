@@ -41,6 +41,8 @@ class Context:
         self.original_transform_matrix = self.native.get_matrix()
         self.states = [State()]
 
+        self.native.set_line_width(1.0)
+
         # Backwards compatibility for Toga <= 0.5.3
         self.in_fill = False
         self.in_stroke = False
